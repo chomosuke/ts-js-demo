@@ -1,9 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTechnicians = void 0;
-const Technician_1 = require("./Technician");
-function getTechnicians() {
-    const subSkills = [
+import { SubSkill } from "./SubSkill";
+import { Technician, TechnicianType } from "./Technician";
+
+export function getTechnician(): Technician {
+    const subSkills: SubSkill[] = [
         {
             id: 1,
             name: 'climb up large ladder',
@@ -15,7 +14,7 @@ function getTechnicians() {
         },
     ];
     return {
-        type: Technician_1.TechnicianType[0],
+        type: TechnicianType.smoke,
         name: 'richard',
         id: 1,
         skills: [
@@ -25,6 +24,5 @@ function getTechnicians() {
                 subSkills: subSkills,
             }
         ]
-    };
+    }
 }
-exports.getTechnicians = getTechnicians;
