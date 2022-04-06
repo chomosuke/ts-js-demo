@@ -1,9 +1,9 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
-    "startTs": "ts-node ./ts/index.ts",
-    "startJs": "node ./js/index.js",
-    "build": "tsc"
+    "ts": "ts-node ./ts/index.ts",
+    "js": "node ./js/index.js"
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.2",

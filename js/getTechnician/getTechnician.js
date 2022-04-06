@@ -1,8 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTechnicians = void 0;
-const Technician_1 = require("./Technician");
-function getTechnician() {
+export function getTechnician() {
     const subSkills = [
         {
             id: 1,
@@ -15,7 +11,7 @@ function getTechnician() {
         },
     ];
     return {
-        type: Technician_1.TechnicianType[0],
+        type: smoke,
         name: 'richard',
         id: 1,
         skills: [
@@ -27,4 +23,7 @@ function getTechnician() {
         ]
     };
 }
-exports.getTechnician = getTechnician;
+
+export const smoke = 'smoke';
+export const gas = 'gas';
+export const electrical = 'electrical';
