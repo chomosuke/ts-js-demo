@@ -1,23 +1,26 @@
 const { SubSkill } = require("./SubSkill");
 
-export class Skill {
+class Skill {
     skills = [];
-
-    constructor(userId) {
+    
+    constructor() {
+        this.skills = [];
     }
 
-    createSkillsToUser(userId) {
+    createSkillsToUser() {
         let defaultSkill = {
             id: 1,
             name: "Smoke Alarms",
         };
-        
-        skills.push(defaultSkill);
+
+        this.skills.push(defaultSkill);
     }
 
     getSkillsWithSubSkills() {
-        skills[0].subSkills = SubSkill.listAll();
+        this.skills[0].subSkills = SubSkill.listAll();
 
-        return skills;
+        return this.skills;
     }
 }
+
+module.exports.Skill = Skill;

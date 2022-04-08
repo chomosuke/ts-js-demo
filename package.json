@@ -1,6 +1,5 @@
 {
   "private": true,
-  "type": "module",
   "scripts": {
     "ts": "ts-node ./ts/index.ts",
     "js": "node ./js/index.js"

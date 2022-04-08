@@ -1,7 +1,7 @@
 let { Skill } = require("./Skill");
 let { User } = require("./User");
 
-export class Technician extends User {
+class Technician extends User {
     constructor(props) {
         super(props);
     }
@@ -16,3 +16,5 @@ export class Technician extends User {
         return this;
     }
 }
+
+module.exports.Technician = Technician;
