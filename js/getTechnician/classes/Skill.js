@@ -11,14 +11,13 @@ class Skill {
         let defaultSkill = {
             id: 1,
             name: "Smoke Alarms",
+            subSkills: SubSkill.listAll(),
         };
 
         this.skills.push(defaultSkill);
     }
 
     getSkillsWithSubSkills() {
-        this.skills[0].subSkills = SubSkill.listAll();
-
         return this.skills;
     }
 }

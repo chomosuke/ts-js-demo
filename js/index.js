@@ -9,7 +9,8 @@ app.get("/", (req, res) => {
     res.json(result);
 });
 
-app.get("/allSubSkillsOfTechnician", (req, res) => {
+app.get("/allSubSkillsNameOfTechnician", (req, res) => {
+    let names = getTechnician().skills.map((s) => s.subSkills).flat().map((subSkill) => subSkill.name);
     res.json({});
 });
 

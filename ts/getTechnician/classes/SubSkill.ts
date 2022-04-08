@@ -1,5 +1,5 @@
 export class SubSkill {
-    static listAll() {
+    static listAll(): ISubSkill[] {
         return [
             {
                 id: 1,
@@ -7,4 +7,9 @@ export class SubSkill {
             },
         ];
     }
+}
+
+export interface ISubSkill {
+    id: number;
+    name: string;
 }

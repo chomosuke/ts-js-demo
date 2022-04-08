@@ -1,9 +1,9 @@
-import { SubSkill } from './SubSkill';
+import { ISubSkill, SubSkill } from './SubSkill';
 
 export interface ISkill {
     id: number;
     name: string;
-    subSkills: SubSkill[];
+    subSkills: ISubSkill[];
 }
 
 export class Skill {

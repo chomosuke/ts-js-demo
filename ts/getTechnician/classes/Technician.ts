@@ -6,8 +6,11 @@ export class Technician extends User {
     
     constructor(props: IProps) {
         super(props);
+
         let skill = new Skill();
+
         skill.createSkillsToUser();
+        
         this.skills = skill.getSkillsWithSubSkills();
     }
 

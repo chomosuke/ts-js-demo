@@ -6,7 +6,7 @@ export function getTechnician() {
     let userDetails = technician.getDetails();
 
     // you don't know what the object will be like
-    // userDetails.skills[0].xxx
+    userDetails.skills[0]?.subSkills[0]?.name;
 
     return userDetails;
 }
