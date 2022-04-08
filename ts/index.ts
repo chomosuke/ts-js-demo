@@ -7,8 +7,8 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.get('/allSubSkills', (req, res) => {
-    res.send('Hello World!');
+app.get('/allSubSkillsOfTechnician', (req, res) => {
+    res.json({});
 });
 
 app.listen(port, () => {

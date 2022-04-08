@@ -1,28 +1,12 @@
-import { SubSkill } from "./SubSkill";
-import { Technician, TechnicianType } from "./Technician";
+import { Technician } from './classes/Technician';
 
-export function getTechnician(): Technician {
-    const subSkills: SubSkill[] = [
-        {
-            id: 1,
-            name: 'climb up large ladder',
-        },
-        {
-            id: 1,
-            name: 'climb down large ladder',
-            description: 'many people can only climb up and can\'t climb down',
-        },
-    ];
-    return {
-        type: TechnicianType.smoke,
-        name: 'richard',
-        id: 1,
-        skills: [
-            {
-                id: 1,
-                name: 'large ladder',
-                subSkills: subSkills,
-            }
-        ]
-    }
+export function getTechnician() {
+    let technician = new Technician({ id: 1, name: "John Doe" });
+
+    let userDetails = technician.getDetails();
+
+    // you don't know what the object will be like
+    // userDetails.skills[0].xxx
+
+    return userDetails;
 }
